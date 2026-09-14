@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maple Ledger Desk</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #faf7f2;
+      color: #2c2c2c;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+      flex: 1;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0 1.5rem;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #3b2f2f;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      font-size: 0.9rem;
+      color: #7a6b6b;
+      margin-top: 0.25rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.25rem 1.125rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #3b2f2f;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .card h2 .icon {
+      font-size: 1.2rem;
+    }
+    .card p, .card li {
+      font-size: 0.925rem;
+      color: #4a3f3f;
+    }
+    .tip-text {
+      font-style: italic;
+      padding: 0.5rem 0 0.25rem;
+      border-left: 3px solid #c7a87b;
+      padding-left: 0.75rem;
+      margin-top: 0.25rem;
+    }
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.25rem 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .hours-grid .day {
+      font-weight: 500;
+      color: #3b2f2f;
+    }
+    .hours-grid .time {
+      text-align: right;
+      color: #5f4f4f;
+    }
+    .hours-grid .closed {
+      color: #b08968;
+      font-style: italic;
+    }
+    .note-signoff {
+      margin-top: 0.75rem;
+      text-align: right;
+      font-size: 0.85rem;
+      color: #7a6b6b;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0 1rem;
+      font-size: 0.8rem;
+      color: #9a8a8a;
+    }
+    @media (max-width: 400px) {
+      .container { padding: 1rem 0.75rem; }
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🍁 Maple Ledger Desk</h1>
+      <p>Friendly bookkeeping for small businesses</p>
+    </header>
+
+    <div class="card">
+      <h2><span class="icon">💡</span> This Month's Tip</h2>
+      <div class="tip-text">
+        <p><strong>Track your receipts weekly, not yearly.</strong> Set aside 15 minutes every Friday to snap photos of receipts and log them in your bookkeeping software. A small weekly habit saves hours of scrambling at tax time — and you'll never lose a deductible expense again.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">✍️</span> From the Desk</h2>
+      <p>Spring is the perfect time to tidy up your chart of accounts. I've been helping clients clean up old categories and set up fresh ones for the new season. If your books feel cluttered, you're not alone — a little spring cleaning goes a long way. Stop by or send a note; I'm happy to take a look.</p>
+      <div class="note-signoff">— Sarah, Maple Ledger Desk</div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🕐</span> Open Hours</h2>
+      <div class="hours-grid">
+        <span class="day">Monday</span><span class="time">9:00 AM – 5:00 PM</span>
+        <span class="day">Tuesday</span><span class="time">9:00 AM – 5:00 PM</span>
+        <span class="day">Wednesday</span><span class="time">9:00 AM – 5:00 PM</span>
+        <span class="day">Thursday</span><span class="time">9:00 AM – 5:00 PM</span>
+        <span class="day">Friday</span><span class="time">9:00 AM – 3:00 PM</span>
+        <span class="day">Saturday</span><span class="time closed">Closed</span>
+        <span class="day">Sunday</span><span class="time closed">Closed</span>
+      </div>
+    </div>
+
+    <footer>
+      Maple Ledger Desk &bull; 42 Elm Street, Suite 3 &bull; hello@mapleledger.com
+    </footer>
+  </div>
+</body>
+</html>
